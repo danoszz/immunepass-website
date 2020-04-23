@@ -1,0 +1,293 @@
+@import "../../styles/variables/variables";
+
+$column--width: $magicNumber;
+$borderHeight: $magicNumber / 8;
+
+.section--about {
+  display: flex;
+  justify-content: space-between;
+  padding: $magicNumber;
+  flex-direction: column;
+  background-color: $c-black;
+  min-height: 100vh;
+  .about--info {
+    @media screen and (min-width: $desktop-breakpoint) {
+      max-width: calc(100% - #{$magicNumber} * 6);
+      margin: $magicNumber * 3 $magicNumber;
+    }
+  }
+}
+.section--selected-projects {
+  .section--heading {
+    display: flex;
+    justify-content: space-between;
+    padding: $magicNumber $magicNumber / 2 $magicNumber / 2 $magicNumber / 2;
+    flex-direction: column;
+
+    .title,
+    .subtitle {
+      @include typography__large;
+      margin: 0;
+      padding: 0;
+    }
+
+    .subtitle {
+      color: $c-grey__dark;
+      margin-top: $magicNumber / 8;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+      padding: $magicNumber $magicNumber 0 $magicNumber;
+      flex-direction: row;
+
+      .title,
+      .subtitle {
+        @include typography__large;
+      }
+      .subtitle {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+body.light-mode {
+  .section--selected-projects {
+    .section--heading {
+      p {
+        color: $c-grey__medium;
+      }
+    }
+  }
+}
+
+.section--services {
+  background-color: $c-grey__blackish;
+  padding: 0;
+  .services--heading {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.header--container {
+  background-color: #ededed;
+  color: $c-black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    right: -50vh;
+    bottom: -75vh;
+    border-radius: 150vh;
+    width: 150vh;
+    height: 150vh;
+    background-color: #cfcfff;
+    z-index: -1;
+    filter: blur(100px);
+    @media screen and (max-width: $tablet-breakpoint) {
+      right: 0;
+      left: 0;
+      bottom: -50vw;
+      border-radius: 100vw;
+      width: 100vw;
+      height: 100vw;
+    }
+  }
+  // min-height: calc(100vh - #{$borderHeight});
+  .information {
+    color: #242424;
+    padding: $magicNumber;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    z-index: 1;
+
+    h1 {
+      margin-bottom: $magicNumber / 2;
+      max-width: 700px;
+    }
+    p {
+      margin-right: $magicNumber * 2;
+      opacity: 0.8;
+      margin-bottom: $magicNumber;
+      max-width: 680px;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      width: 100%;
+      padding: $magicNumberFluid;
+      h1 {
+        margin-bottom: $magicNumber / 4;
+      }
+      p {
+        margin-right: 0;
+      }
+      .cta {
+        position: relative;
+        bottom: 0;
+
+        a {
+          padding: $magicNumber / 2;
+        }
+        img {
+          width: $magicNumber;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .cta {
+    position: absolute;
+    min-width: $magicNumber * 4;
+    background-color: $c-white;
+    bottom: -$magicNumber / 6;
+    left: $magicNumber;
+    transition: all 280ms $t-smooth_one;
+    &:after {
+      content: "";
+      width: 100%;
+      height: calc(100% + #{$magicNumber / 6});
+      position: absolute;
+      background-color: #cfcfff;
+      right: -$magicNumber / 6;
+      top: -$magicNumber / 6;
+      z-index: -1;
+      transition: all 280ms $t-smooth_one;
+    }
+
+    &:hover {
+      &:after {
+        right: -$magicNumber / 3;
+        top: -$magicNumber / 3;
+        height: calc(100% + #{$magicNumber / 3});
+        transition: all 480ms $t-smooth_one;
+      }
+      img {
+        transform: translateX($magicNumber / 4);
+        transition: all 480ms $t-smooth_one;
+      }
+    }
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: $magicNumber / 2 $magicNumber;
+      color: #242424;
+      @include typography__medium;
+    }
+    img {
+      margin-right: $magicNumber;
+      transition: all 220ms $t-smooth_one;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      order: -1;
+      width: 100%;
+      a {
+        padding: $magicNumber / 2;
+      }
+      img {
+        width: $magicNumber;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .mockup {
+    height: 100%;
+    width: 40%;
+
+    img {
+      width: 100%;
+      height: auto;
+      transform: rotate(-10deg) translate(0, 20%) scale(1);
+      transition: all 620ms $t-smooth_one;
+    }
+
+    &:hover {
+      img {
+        transform: rotate(0) translate(0, 5%) scale(0.8);
+        transition: all 820ms $t-smooth_one;
+      }
+    }
+  }
+  @media screen and (max-width: $tablet-breakpoint) {
+    height: initial;
+    flex-direction: column-reverse;
+    padding-top: $magicNumber;
+    .mockup {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $magicNumber $magicNumber 0 $magicNumber;
+      &:hover {
+        img {
+          transform: none;
+        }
+      }
+      img {
+        transform: none;
+        width: 100%;
+      }
+    }
+  }
+}
+.header--footer {
+  // border-top: solid $c-dark_blue $borderHeight;
+  width: 100vw;
+  padding: $magicNumber;
+  background-color: $c-creme_light;
+  h2 {
+    padding: 0;
+    margin: $magicNumber 0 $magicNumber / 4 0;
+  }
+  h2 + p {
+    @include typography__medium;
+    padding: 0;
+    margin: 0 0 $magicNumber 0;
+    color: $c-blue_light;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    padding: $magicNumberFluid;
+    h2 {
+      margin-top: $magicNumber / 4;
+    }
+    h2 + p {
+      margin-bottom: $magicNumberFluid;
+    }
+  }
+}
+
+body.light-mode {
+  .header--container {
+    background-color: #031926;
+    .information {
+    }
+    .canvas--background {
+      background-color: $c-white;
+    }
+  }
+  .header--footer {
+    border-color: $c-red;
+  }
+}

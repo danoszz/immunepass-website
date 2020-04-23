@@ -1,0 +1,72 @@
+{
+  "name": "devign-it",
+  "version": "0.0.1",
+  "description": "Digital Agency",
+  "author": "Daan van der Zwaag - daan@devign.it",
+  "license": "MIT",
+  "homepage": "https://daanvanderzwaag.com",
+  "keywords": [
+    "gatsby"
+  ],
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danoszz/daan-van-der-zwaag.git"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "prettier": "prettier --check \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gatsby build",
+    "clear-cache": "rm -r ./.cache",
+    "live": "git checkout production && git merge master && git push && git checkout master"
+  },
+  "dependencies": {
+    "gatsby-cli": "^2.9.0",
+    "gatsby-image": "^2.2.42",
+    "gatsby-plugin-dark-mode": "^1.1.0",
+    "gatsby-plugin-google-analytics": "^2.1.36",
+    "gatsby-plugin-mailchimp": "^5.1.2",
+    "gatsby-plugin-manifest": "^2.2.42",
+    "gatsby-plugin-offline": "^3.0.35",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sass": "^2.1.29",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-transition-link": "^1.17.7",
+    "gatsby-plugin-use-dark-mode": "^1.1.2",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-sharp": "^2.3.16",
+    "gsap": "^3.2.3",
+    "intersection-observer": "^0.7.0",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.1",
+    "npm-check-updates": "^4.0.3",
+    "ogl": "0.0.40",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-helmet": "^5.2.1",
+    "react-intersection-observer": "^8.26.1",
+    "react-p5": "^1.3.2",
+    "react-p5-wrapper": "^2.0.0",
+    "react-pose": "^4.0.10",
+    "sharp": "^0.24.1",
+    "styled-components": "^5.0.1",
+    "swiper": "^5.3.6",
+    "three": "^0.114.0",
+    "typescript": "^3.8.3",
+    "use-dark-mode": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "gatsby": "^2.19.24",
+    "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1",
+    "yargs-parser": "^18.0.0"
+  }
+}
