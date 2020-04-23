@@ -1,3 +1,3 @@
-> ⚠️This website is currently a clone of devign.it In the future it will become standalone and based on shared packages.
+> ⚠️This website is currently a clone of Fides Health. In the future it will become standalone and based on shared packages.
 
-# Fides
+# ImmunePass
