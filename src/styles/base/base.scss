@@ -39,49 +39,49 @@ body {
 
 // Theming
 
-body.light-mode {
-  background-color: $c-grey__light;
-  color: $c-black;
-  height: 62px;
+// body.light-mode {
+//   background-color: $c-grey__light;
+//   color: $c-black;
+//   height: 62px;
 
-  // .header--container {
-  //     background-color: $c-grey__light;
-  //     color: $c-black;
-  //     .author a {
-  //         color: $c-black;
-  //     }
-  // }
-  .main-container {
-    background-color: $c-white;
-    color: $c-black;
-  }
-  .main-navigation {
-    color: $c-black;
-    border-color: $c-black;
-    .main-navigation--item {
-      border-color: $c-black;
-      h2 {
-        color: $c-black;
-      }
-    }
-  }
-}
+//   // .header--container {
+//   //     background-color: $c-grey__light;
+//   //     color: $c-black;
+//   //     .author a {
+//   //         color: $c-black;
+//   //     }
+//   // }
+//   .main-container {
+//     background-color: $c-white;
+//     color: $c-black;
+//   }
+//   .main-navigation {
+//     color: $c-black;
+//     border-color: $c-black;
+//     .main-navigation--item {
+//       border-color: $c-black;
+//       h2 {
+//         color: $c-black;
+//       }
+//     }
+//   }
+// }
 
-body.dark-mode {
-  // $c-black: $c-white;
-  // $c-white: $c-black;
+// body.dark-mode {
+//   // $c-black: $c-white;
+//   // $c-white: $c-black;
 
-  background-color: $c-black;
+//   background-color: $c-black;
 
-  // .header--container {
-  //     background-color: $c-black;
-  //     color: $c-white;
-  //     .author a {
-  //         color: $c-white;
-  //     }
-  // }
-}
+//   // .header--container {
+//   //     background-color: $c-black;
+//   //     color: $c-white;
+//   //     .author a {
+//   //         color: $c-white;
+//   //     }
+//   // }
+// }
 
-.tl-edges {
-  overflow-x: initial;
-}
+// .tl-edges {
+//   overflow-x: initial;
+// }

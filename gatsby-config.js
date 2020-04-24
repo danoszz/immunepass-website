@@ -17,13 +17,12 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-sass",
-    "gatsby-plugin-use-dark-mode",
     "gatsby-plugin-offline",
     "gatsby-plugin-transition-link",
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-59635505-4",
+        trackingId: "UA-596355XX-X",
       },
     },
     {
