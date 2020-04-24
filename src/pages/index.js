@@ -28,10 +28,10 @@ class RootIndex extends React.Component {
               test resultaten verifieert en als anonieme data naar je telefoon
               stuurt. Hierdoor kun je aantonen dat je immuun bent, terwijl je
               privacy wordt gewaarborgd. Met ImmunePass kunnen wij stapsgewijs
-              terugkeren naar een gezonde samenleving. Juist na de crisis is het
-              van belang om slimme technologie inzetten om samen veilig te
-              blijven. Dit kan alleen als de data anoniem en versleuteld blijft.
-              Op dit moment ontwikkelen wij ons prototype met steun van (…)
+              terugkeren naar een gezonde samenleving. Op dit moment zijn wij
+              hard bezig met de ontwikkeling van de applicatie en website. Voor
+              vragen kunt u ons altijd{" "}
+              <a href="mailto:daan@devign.it">emailen</a>.
             </p>
           </div>
           <div className="cta">
