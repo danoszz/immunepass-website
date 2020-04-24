@@ -4,11 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "ImmunePass — Safely return to society",
+    title: "ImmunePass — COVID19 immuniteits pas",
     titleTemplate: "%s | ImmunePass",
     description:
-      "An action-oriented research into the future of healthcare information systems",
-    url: "https://www.fides.health", // No trailing slash allowed!
+      "ImmunePass is een digitale pas waarmee je kunt aantonen dat je immuun bent voor het coronavirus",
+    url: "https://www.immunepass.nl", // No trailing slash allowed!
     image: "/og-image.jpg", // Path to your image you placed in the 'static' folder
   },
   plugins: [
@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Fides — Fighting incorrect medical data with Blockchain`,
-        short_name: `Fides Health`,
+        name: `ImmunePass — Keer veilig terug naar de samenleving`,
+        short_name: `ImmunePass`,
         start_url: `/`,
         background_color: `#ff1053`,
         theme_color: `#ff1053`,
